@@ -1,13 +1,13 @@
 services:  
   db:
     image: justhoven/sqlpinacoteca:v1
-    container_name: contenedorMiCine
+    container_name: contenedorMiPinacoteca
     ports:
       - "3306:3306"
   
   php:
     image: justhoven/phppinacoteca:v1
-    container_name: contenedorMiApp
+    container_name: contenedorMiAppPinacoteca
     ports:
       - "8080:80"
     depends_on:
